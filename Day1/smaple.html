@@ -1,0 +1,89 @@
+<!-- #tag Day1 -->
+<!-- Made by: Anubhav -->
+<!-- github link: https://github.com/RajAnubhav/100Days-CSS-Challenge -->
+<!-- Project Name:  Hover Application Video viewer-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TITLE</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <!-- adding the css styles -->
+    <style>
+        .nav{
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            display: block;
+            text-align:center;
+            background-color: rgba(59, 88, 88, 0.486);
+        }
+        a{
+            text-decoration: none;
+            color:rgb(23, 32, 41);
+            font-stretch: expanded;
+            font-family: Shizuru;
+        }
+    </style>
+    
+<body>
+    <!-- This is for the navigation bar -->
+    <!-- Procedure for navigation bar
+        * make a table and then, style it as header
+    -->
+    <div class="container">
+        <p class="nav">
+        <ul class="nav">
+            <li><a href="#">home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+        </p>
+    </div>
+    <!-- home page -->
+        <!-- Inside the homepage
+            one background image and the tagline
+        -->
+        <div class="homepage">
+            Video Hovering Website
+            <br><br>
+            <!-- tagline -->
+            "Broadcast Yourself", the sole right to open up with the world.
+            <br>
+            <br>
+        </div>
+        <div class="buttonClass">
+            <input type="button" value="Click to Start">
+        </div>
+
+    <!-- Video -->
+        <div class="videoShower">
+        <iframe src="https://www.youtube.com/watch?v=Il0S8BoucSA" frameborder="0" title="description1"></iframe>
+        <iframe src="https://www.youtube.com/watch?v=Il0S8BoucSA" frameborder="0" title="description2"></iframe>
+        <iframe src="https://www.youtube.com/watch?v=Il0S8BoucSA" frameborder="0" title="description3"></iframe>
+        </div>
+    <!-- Contacts -->
+        <div class="Contacts">
+        <div class="contactMe">
+            <p>
+                This project is the first project of the HTML and CSS.
+                My name is Anubhav. This simple project is made by me.
+                For more details you can visit to my github profile.
+                <button><a href="https://github.com/RajAnubhav/100Days-CSS-Challenge" target="_blank">View me</a></button>
+            </p>            
+        </div>
+        <div class="flexContactMe">
+            <a href="mailto:anubhavraj729@gmail.com" target="_blank"><img src="/Project_CSS/Canvas_TUT/gmail_logo.png" width="30" height="30"></a>
+            <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="/Project_CSS/Canvas_TUT/instagram_logo.jpg" width="30" height="30"></a>
+            <a href="https://github.com/RajAnubhav" target="_blank"><img src="/Project_CSS/Canvas_TUT/github_logo.png" width="50" height="30"></a>
+        </div>
+        </div>
+    
+</body>
+</html>
