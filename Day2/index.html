@@ -107,7 +107,8 @@
             
         }
         /*
-        
+        similarily, the face2 card that means the elements in the card 2
+        get the properties
         */
         .container .card .face.face2{
             position: relative;
@@ -122,15 +123,18 @@
             transition: 0.8s;
         }
 
+        /*
+        this will show the transition from position 0 to max -100px
+        */
         .container .card:hover .face.face2{
             transform:translateY(0);
         }
-
+        /*fixing the margin of the content of the card2*/
         .container .card .face.face2 .content p{
             margin: 0;
             padding: 0;
         }
-
+        /*styling the elements inside the card 2*/
         .container .card .face.face2 .content a{
             margin: 15px 0 0;
             display: inline-block;
@@ -140,7 +144,7 @@
             padding: 10px;
             border: 1px solid #333;
         }
-
+        /*this is the way the inner-card respods on hover*/
         .container .card .face.face2 .content a:hover{
             background: #333;
             color: #fff;
