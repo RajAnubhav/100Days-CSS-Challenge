@@ -40,37 +40,64 @@
             padding-top: 3rem;
             justify-content: space-between;
         }
-
+        /*this is the concept of multiple classes in css*/
+        /*the container class and card classes will show the properties assigned to them*/
         .container .card{
             position: relative;
             cursor: pointer;
         }
 
+        /*then, we go to the face and face1 class*/
         .container .card .face.face1{
             position: relative;
             background: #333;
             display: flex;
+            /*
+            with the help of flex i can align the whole class easily, using the justify-content: center, 
+            which works well only when called with the display: flex;
+            */
             justify-content: center;
             align-items: center;
-            z-index: 1;
-            transform: translateY(100px);
+            z-index: 1;/*as by default i am making it with z-index : 1*/
+            /*here in order to show the transition we need to fix the maximum transform in the Y direction*/
+            transform: translateY(100px);/*so, here I am giving 100px*/
         }
 
+        /*
+        similarily, i am moving to the hover part
+        on hover the object will change the background with pink color and will start the transformation from initial position
+        as 0 in Y-direction,
+        and will show the transition till 0.8seconds.
+        */
         .container .card:hover .face.face1{
             background-color: #22111675;
             transform: translateY(0);
             transition: 0.8s;
         }
 
+        /*
+        this is for the content in the face and face1 class that is the part inside the second card
+        when the upper card is hovered, then the opacity of the inner card will turn 1
+        and then, it will get visible
+        */
         .container .card:hover .face.face1 .content{
             opacity:1;
         }
-
+        /*
+        then we are fixing the size of the image which is set to max-width of 150px
+        */
         .container .card .face.face1 .content img{
             max-width: 150px;
             
         }
-
+        /*
+        setting the card 2 features:
+        1. margin - 10px 0  0 
+        2. fixing the padding to 0
+        3. text-align : center
+        4. color of the text to white
+        5. font-size to 1.5rem
+        */
         .container .card .face.face1 .content h3{
             margin: 10px 0 0;
             padding: 0;
@@ -79,7 +106,9 @@
             font-size: 1.5rem;
             
         }
-
+        /*
+        
+        */
         .container .card .face.face2{
             position: relative;
             background: #fff;
