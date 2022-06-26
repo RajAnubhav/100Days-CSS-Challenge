@@ -10,8 +10,11 @@ body{
     width: 400px;
     height: 500px;
     background-color: rgb(184 252 255 / 39%);
-    box-shadow: rgb(85, 83, 83) 10px 10px 15px;
+    box-shadow: 10px 10px 50px;
     border-radius: 5px;
+    animation: 5s;
+    transition-duration: 1.5s;
+    transition-delay: 50ms;
 }
 
 .top-content{
