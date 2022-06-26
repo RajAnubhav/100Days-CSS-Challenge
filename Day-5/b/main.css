@@ -1,0 +1,106 @@
+body{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(#0a4242ad, #1752554a, #0a4242ad);
+}
+
+.container{
+    width: 400px;
+    height: 500px;
+    background-color: rgb(184 252 255 / 39%);
+    box-shadow: rgb(85, 83, 83) 10px 10px 15px;
+    border-radius: 5px;
+}
+
+.top-content{
+    background: linear-gradient(rgba(40, 49, 49, 0.742), rgb(64, 113, 112), rgba(30, 93, 93, 0.742));
+    border-radius: 5px 5px 0px 0px;
+}
+
+.top-first{
+    margin: 0px 0px 0px 40px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.heading1{
+    padding-top: 40px;
+}
+
+.top-second{
+    width: 320px;
+    height: 100px;
+    margin: 20px 45px 15px 45px;
+    font-size: 13px;
+    color: rgb(243, 240, 240);
+}
+
+.top-third{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    
+}
+
+.bottom-first-userlogin{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color: darkcyan;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 22px 0px 13px 0px;
+}
+
+.bottom-second-username{
+    display: flex;
+    justify-content: center;
+    margin-top: 9px;
+}
+
+.bottom-fourth{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding: 30px;
+}
+
+.login-button{
+    display: flex;
+    justify-content: center;
+}
+
+.common{
+    cursor: pointer;
+}
+
+input{
+    cursor: pointer;
+    width: 230px;
+    /* background-color: rgb(184, 222, 255); */
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.remember-me{
+    display: flex;
+    font-size: 12px;
+}
+
+.input-data{
+    width: 230px;
+    margin-left: 87px;
+    border-radius: 5px;
+}
+
+.input-data:hover{
+    color: rgb(43, 43, 43);
+}
