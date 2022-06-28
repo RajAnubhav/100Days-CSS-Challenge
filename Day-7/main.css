@@ -1,0 +1,39 @@
+.container{
+    width: fit-content;
+    border-radius: 3px 10px 10px 10px;
+    width: 320px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px 15px 7px 10px;
+    color: white;
+}
+.name{
+    color: purple;
+    font-size: 15px;
+    width: fit-content;
+    font-weight: bold;
+    margin: 3px 0px 3px 0px ;
+}
+
+.time{
+    text-align: right;
+    margin-top: 12px;
+}
+
+.sender{
+    border-radius: 3px 10px 10px 10px;
+    align-items: left;
+    background-color: rgb(43, 122, 226);
+}
+
+.receiver{
+    border-radius: 3px 10px 10px 10px;
+    display: flex;
+    background-color: rgb(20, 100, 131);
+}
+
+.main-body{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(53, 6, 6);
+    padding: 20px;
+}
