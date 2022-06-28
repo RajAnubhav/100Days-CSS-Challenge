@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <h1>
+        These are the bootstrap buttons made using raw-css.
+    </h1>
+    <div class="container">
+        <button id="primary-button"  class="comman" onclick="disp1()">Primary</button>
+        <button id="secondary-button"  class="comman" onclick="disp2()">Secondary</button>
+        <button id="success-button"  class="comman" onclick="disp3()">Success</button>
+        <button id="danger-button"  class="comman" onclick="disp4()">Danger</button>
+        <button id="warning-button"  class="comman" onclick="disp5()">Warning</button>
+        <button id="info-button"  class="comman" onclick="disp6()">Info</button>
+    </div>
+    <div class="reset">
+        <button id="resetButton" class="common" type="reset" onclick="resetButton()">Refresh</button>
+    </div>
+
+    <script>
+        let disp1=()=>{
+            document.getElementById('primary-button').style.boxShadow="0px 0px 0px 3px rgb(123 157 209)";
+        }
+        let disp2=()=>{
+            document.getElementById('secondary-button').style.boxShadow="0px 0px 0px 3px rgb(108 117 125 / 70%)";
+        }
+        let disp3=()=>{
+            document.getElementById('success-button').style.boxShadow="0px 0px 0px 3px rgb(25 135 84 / 70%)";
+        }
+        let disp4=()=>{
+            document.getElementById('danger-button').style.boxShadow="0px 0px 0px 3px rgb(220 53 69 / 70%)";
+        }
+        let disp5=()=>{
+            document.getElementById('warning-button').style.boxShadow="0px 0px 0px 3px rgb(255 193 7 / 70%)";
+        }
+        let disp6=()=>{
+            document.getElementById('info-button').style.boxShadow="0px 0px 0px 3px rgb(13 202 240 / 70%)";
+        }
+        let resetButton=()=>{
+            document.getElementById('resetButton').style.boxShadow="0px 0px 0px 3px rgb(128 0 128 / 70%)";
+            location.reload();
+        }
+    </script>
+</body>
+</html>
