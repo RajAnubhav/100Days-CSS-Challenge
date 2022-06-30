@@ -1,0 +1,28 @@
+.nav{
+    background: linear-gradient(to right,rgb(40, 9, 83), rgb(44, 54, 101), rgb(80, 142, 213));
+    box-shadow: rgba(0, 0, 0, 0.422) -1px 10px 5px;
+    position: sticky;
+    top: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+ul{
+    margin: 0px;
+}
+
+li{
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 3px;
+    padding: 0px 5px 0px 5px;
+}
