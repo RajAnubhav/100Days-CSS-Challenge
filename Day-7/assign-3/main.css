@@ -1,0 +1,42 @@
+/* .container{
+    display: flex;
+    justify-content: space-between;
+} */
+
+.red{
+    width: calc(100% / 2);
+    background-color: red;
+    height: calc(100% / 5);
+}
+.blue{
+    background-color: blue;
+    width: 40%;
+    height: 100%;
+}
+.yellow{
+    background-color: yellow;
+    width: 40%;
+    height: 50%;
+}
+.green{
+    background-color: green;
+    width: 40%;
+    height: 50%;
+}
+
+.container-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 430px;
+}
+
+input{
+    width: calc(100% / 3);
+    margin: 20px;
+}
+
+div{
+    padding: 60px 100px 50px 100px;
+    width: calc(100% / 3);
+    margin: 20px;
+}

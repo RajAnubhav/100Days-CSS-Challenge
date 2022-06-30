@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="printData">
+        <h1>
+            These are the bootstrap buttons made using raw-css.
+        </h1>
+        <div class="container">
+            <button id="primary-button" class="common" onclick="disp1()">Primary</button>
+            <button id="secondary-button" class="common" onclick="disp2()">Secondary</button>
+            <button id="success-button" class="common" onclick="disp3()">Success</button>
+            <button id="danger-button" class="common" onclick="disp4()">Danger</button>
+            <button id="warning-button" class="common" onclick="disp5()">Warning</button>
+            <button id="info-button" class="common" onclick="disp6()">Info</button>
+        </div>
+        <div class="reset" id="resetMe">
+            <button id="resetButton" class="common" type="reset" onclick="resetButton()">Refresh</button>
+        </div>
+        <div class="print" id="printMe">
+            <button id="printBtn" class="common" type="reset" onclick="printButton()">Print</button>
+        </div>
+    </div>
+    <div class="code" id="code">
+        <div class="copy-to-clipboard" id="displayText"></div>
+        <button id="copyText" class="copyText" onclick="copyCmd()" title="Copy to clipboard">Copy</button>
+        <pre id="copyCode">
+            /* Primary button */
+            #primary-button{
+                border:2px solid #0d6efd;
+                background-color: white;
+                color: #0d6efd;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                border-radius: 3px;
+                padding: 8px;
+            }
+
+            #primary-button:hover{
+                border: 2px solid #0d6efd;
+                background-color: #0d6efd;
+                color: white;
+                border-radius: 3px;
+                padding: 8px;
+            }
+
+            /* Secondary button */
+            #secondary-button{
+                border:2px solid #6c757d;
+                background-color: white;
+                color: #6c757d;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                border-radius: 3px;
+                padding: 8px;
+            }
+
+            #secondary-button:hover{
+                border: 2px solid #6c757d;
+                background-color: #6c757d;
+                color: white;
+                border-radius: 3px;
+                padding: 8px;
+            }
+
+            /* Success button */
+            #success-button{
+                border:2px solid #198754;
+                background-color: white;
+                color: #198754;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                border-radius: 3px;
+                padding: 8px;
+            }
+
+            #success-button:hover{
+                border: 2px solid #198754;
+                background-color: #198754;
+                color: white;
+                border-radius: 3px;
+                padding: 8px;
+            }
+
+            /* Danger button */
+            #danger-button{
+                border:2px solid #dc3545;
+                background-color: white;
+                color: #dc3545;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                border-radius: 3px;
+                padding: 8px;
+            }
+
+            #danger-button:hover{
+                border: 2px solid #dc3545;
+                background-color: #dc3545;
+                color: white;
+                border-radius: 3px;
+                padding: 8px;
+            }
+
+            /* Warning Button */
+            #warning-button{
+                border:2px solid #ffc107;
+                background-color: white;
+                color: #ffc107;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                border-radius: 3px;
+                padding: 8px;
+            }
+
+            #warning-button:hover{
+                border: 2px solid #ffc107;
+                background-color: #ffc107;
+                color: white;
+                border-radius: 3px;
+                padding: 8px;
+            }
+
+            /* Info Button */
+            #info-button{
+                border:2px solid #0dcaf0;
+                background-color: white;
+                color: #0dcaf0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                border-radius: 3px;
+                padding: 8px;
+            }
+
+            #info-button:hover{
+                border: 2px solid #0dcaf0;
+                background-color: #0dcaf0;
+                color: white;
+                border-radius: 3px;
+                padding: 8px;
+            }
+
+            /* container */
+            .container{
+                text-align: center;
+                margin: 100px 0px 30px 0px;
+            }
+
+            /* comman */
+            .common{
+                width: 80px;
+                cursor: pointer;
+                margin: 5px;
+            }
+
+            /* h1 */
+            h1{
+                margin: 50px 0px 10px 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 40px;
+                text-shadow: #198754 2px 2px 5px;
+                text-align: center;
+
+            }
+
+            /* reset */
+            .reset{
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            /* reset-button */
+            #resetButton{
+                position: relative;
+                border:2px solid purple;
+                background-color: white;
+                color: purple;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                border-radius: 3px;
+                padding: 8px;
+            }
+
+            #resetButton:hover{
+                border: 2px solid purple;
+                background-color: purple;
+                color: white;
+                border-radius: 3px;
+                padding: 8px;
+            }
+
+
+            /* print button */
+            .container {
+                page-break-after:always;
+            }
+        </pre>
+    </div>
+
+    <script>
+        let disp1 = () => {
+            document.getElementById('primary-button').style.boxShadow = "0px 0px 0px 3px rgb(123 157 209)";
+        }
+        let disp2 = () => {
+            document.getElementById('secondary-button').style.boxShadow = "0px 0px 0px 3px rgb(108 117 125 / 70%)";
+        }
+        let disp3 = () => {
+            document.getElementById('success-button').style.boxShadow = "0px 0px 0px 3px rgb(25 135 84 / 70%)";
+        }
+        let disp4 = () => {
+            document.getElementById('danger-button').style.boxShadow = "0px 0px 0px 3px rgb(220 53 69 / 70%)";
+        }
+        let disp5 = () => {
+            document.getElementById('warning-button').style.boxShadow = "0px 0px 0px 3px rgb(255 193 7 / 70%)";
+        }
+        let disp6 = () => {
+            document.getElementById('info-button').style.boxShadow = "0px 0px 0px 3px rgb(13 202 240 / 70%)";
+        }
+        let resetButton = () => {
+            document.getElementById('resetButton').style.boxShadow = "0px 0px 0px 3px rgb(128 0 128 / 70%)";
+            location.reload();
+        }
+        let printButton = () => {
+            document.getElementById('copyCode').style.display = 'none';
+            document.getElementById('printBtn').style.display = 'none';
+            document.getElementById('resetButton').style.display = 'none';
+            document.getElementById('copyText').style.display = 'none';
+            document.getElementById('resetMe').style.display = 'none';
+            document.getElementById('printMe').style.display = 'none';
+            document.getElementById('code').style.display = 'none';
+            print();
+            location.reload()
+        }
+
+        let copyCmd = () => {
+            var copyText = document.getElementById('copyCode');
+            // this is to copy the text to the clipboard
+            navigator.clipboard.writeText(copyText.innerHTML);
+            document.getElementById('displayText').innerHTML = "Copied!";
+        }
+    </script>
+</body>
+
+</html>

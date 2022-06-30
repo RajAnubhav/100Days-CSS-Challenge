@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+
+<body style="background-color: black;">
+    <h1>Welcome to this page</h1>
+    <button onclick="typeWriter()">Click to see the message!</button>
+    <div class="sky">
+        <div class="iclouds">
+            <marquee class="icloud" behavior="" direction="">
+                <img class="cloud" src="cloud.png" alt="">
+                <img class="cloud" src="cloud.png" alt="">
+            </marquee>
+            <marquee class="icloud" behavior="" direction="right">
+                <img class="cloud" style="opacity:0.7;" src="cloud.png" alt="">
+                <img class="cloud" style="opacity:0.7;" src="cloud.png" alt="">
+            </marquee>
+        </div>
+        <div class="container">
+            <div class="message" id="demo" style="display: none;">
+            </div>
+            <div class="square" id="square" style="display:none;"></div>
+            <div class="girl">
+                <img class="girl" src="girl2.png" alt="">
+                <img class="hand" src="hand.png" alt="">
+            </div>
+            <div class="cars">
+                <img class="car" src="car.png" alt="">
+            </div>
+            <div class="wheels">
+                <img class="wh1 wh" src="wheel.png" alt="">
+                <img class="wh2 wh" src="wheel.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var i=0;
+        var txt='Hello guys how are you !';
+        var txt1='Pdh lo bsdk';
+        /* The text */
+        var speed=50;
+        /* The speed/duration of the effect in milliseconds */
+
+        function typeWriter() {
+            document.getElementById("square").style.display='block';
+            document.getElementById("demo").style.display='block';
+        
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML+=txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+</body>
+
+</html>

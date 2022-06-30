@@ -1,0 +1,10 @@
+.imageHolder{
+    background-image: linear-gradient(to right top, pink, rgb(234, 146, 161), rgb(220, 89, 111), rgb(170, 37, 59));
+    /* width: 400px; */
+    height: 400px;
+}
+
+img{
+    -webkit-mask-box-image: url(../../Day-7/assign-2/pic2.png);
+    opacity: 0.2;
+}

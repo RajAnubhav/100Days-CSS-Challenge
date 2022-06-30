@@ -1,0 +1,224 @@
+/* Primary button */
+
+#primary-button{
+    border:2px solid #0d6efd;
+    background-color: white;
+    color: #0d6efd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+#primary-button:hover{
+    border: 2px solid #0d6efd;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+/* Secondary button */
+#secondary-button{
+    border:2px solid #6c757d;
+    background-color: white;
+    color: #6c757d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+#secondary-button:hover{
+    border: 2px solid #6c757d;
+    background-color: #6c757d;
+    color: white;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+/* Success button */
+#success-button{
+    border:2px solid #198754;
+    background-color: white;
+    color: #198754;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+#success-button:hover{
+    border: 2px solid #198754;
+    background-color: #198754;
+    color: white;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+/* Danger button */
+#danger-button{
+    border:2px solid #dc3545;
+    background-color: white;
+    color: #dc3545;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+#danger-button:hover{
+    border: 2px solid #dc3545;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+/* Warning Button */
+#warning-button{
+    border:2px solid #ffc107;
+    background-color: white;
+    color: #ffc107;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+#warning-button:hover{
+    border: 2px solid #ffc107;
+    background-color: #ffc107;
+    color: white;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+/* Info Button */
+#info-button{
+    border:2px solid #0dcaf0;
+    background-color: white;
+    color: #0dcaf0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+#info-button:hover{
+    border: 2px solid #0dcaf0;
+    background-color: #0dcaf0;
+    color: white;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+/* container */
+.container{
+    text-align: center;
+    margin: 100px 0px 30px 0px;
+}
+
+/* comman */
+.common{
+    width: 80px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* h1 */
+h1{
+    margin: 50px 0px 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-shadow: #198754 2px 2px 5px;
+    text-align: center;
+    
+}
+
+/* reset */
+.reset{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* reset-button */
+#resetButton{
+    position: relative;
+    border:2px solid purple;
+    background-color: white;
+    color: purple;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+#resetButton:hover{
+    border: 2px solid purple;
+    background-color: purple;
+    color: white;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+
+/* print button */
+.container {
+    page-break-after:always;
+}
+
+
+body{
+    margin: 100px;
+}
+
+.code{
+    background-color: #abb4bc86;
+    border-radius: 5px;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-shadow: #6c757d 10px 10px 5px;
+    margin: 0px 300px 0px 300px;
+} 
+
+/* copy code id */
+#copyCode{
+    padding-top: 50px;
+    padding-right: 20px;
+    width: fit-content;
+}
+
+/* copy button */
+.copyText{
+    border:2px solid #0d6efd;
+    background-color: white;
+    color: #0d6efd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 3px;
+    position: absolute;
+    right: 500px;
+}
+
+.copyText:hover{
+    border: 2px solid #0d6efd;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+/* Copy to clipboard */
+#displayText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    position: sticky;
+    left: 300px;
+    right: 500px;
+    color: black;
+    /* margin: 32px 0px 0px 0px; */
+}
+

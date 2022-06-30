@@ -1,0 +1,140 @@
+.car {
+    width: 350px;
+}
+
+h1{
+    padding-top: 30px;
+    text-align: center;
+    -webkit-text-fill-color: white;
+}
+
+.wheels {
+    display: flex;
+    flex-direction: row;
+    gap: 137px;
+    width: 100%;
+    padding-left: 20px;
+
+}
+
+.wh1 {
+    height: auto;
+}
+
+.message{
+    background-color: white;
+    width: fit-content;
+    padding: 10px;
+    border: black solid 2px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.square{
+    width: 20px;
+    height: 20px;
+    border-bottom: black solid 2px ;
+    border-right: black solid 2px ;
+    background-color: white;
+    transform: rotate(45deg);
+    margin: -12px 185px -100px;
+}
+
+.wh {
+
+    animation-name: spin;
+    animation-duration: 3000ms;
+    width: 75px;
+    height: 73.4px;
+    margin-top: -80px;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.girl {
+    width: 100px;
+    height: 100px;
+    margin: 54px -8px 2px 57px;
+    z-index: 1;
+}
+
+.container {
+    animation: car-move;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 800ms;
+    animation-duration: 8s;
+    display: flex;
+    flex-direction: column;
+    /* margin: 0px 0px -53px 0px; */
+}
+
+.sky {
+    background-color: cyan;
+    margin-top: 50px;
+    box-shadow: inset #adadad 1px -21px;
+}
+
+.hand {
+    margin: -79px 10px 58px 61px;
+    transition: all;
+    animation-name: hand-move;
+    animation-iteration-count: infinite;
+    animation-duration: 2000ms;
+    animation-delay: 100ms;
+    animation-direction: alternate-reverse;
+    height: 68px;
+}
+
+@keyframes hand-move {
+    from {
+        transform: rotate(-10deg);
+    }
+
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+.cloud {
+    width: auto;
+    margin: 30px;
+    height: 100px;
+}
+
+.iclouds {
+    height: 200px;
+}
+
+
+@keyframes cloud-move {
+    from {
+        transform: translate(1200px);
+    }
+    
+    to {
+        transform: translateX(-800px);
+    }
+}
+
+@keyframes car-move {
+    from {
+        transform: translateX(-100px);
+    }
+
+    to {
+        transform: translateX(1600px);
+    }
+
+}

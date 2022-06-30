@@ -1,0 +1,7 @@
+.text-decorate{
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: rgb(124, 167, 39);
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 10px 5px 5px #adadad;
+}

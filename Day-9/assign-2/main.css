@@ -1,0 +1,12 @@
+.container{
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: 10px dashed yellow;
+    text-shadow: rgb(196, 191, 191) 10px 2px 5px ;
+}
+
+.container::first-letter{
+    font-size: 100px;
+}

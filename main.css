@@ -1,0 +1,399 @@
+.nav-text{
+    display: flex;
+    /* gap:70px */
+    margin: 0;
+    justify-content: space-between;
+    background-color: blue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    animation: color-me-in 5s;
+}
+
+.nav-text-data{
+    padding-top: 12px;
+    font-size: large;
+    color: white;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 40px;
+}
+
+.body-content{
+    display: flex;
+    padding: 15px;
+    justify-content: space-evenly;
+}
+
+caption{
+    padding: 0px 50px 0px 50px;
+}
+
+.block{
+    padding: 50px;
+}
+
+.container1{
+    padding: 100px;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.container2{
+    padding: 10px;
+}
+
+.right-box{
+    padding-left: 105px;
+    margin-right: 50px;
+}
+
+.card1{
+    box-shadow: rgba(192, 192, 192, 0.404) 10px 10px 2px 3px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.card2{
+    margin-left: 30px;
+    box-shadow: rgba(192, 192, 192, 0.404) 10px 10px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.card{
+    margin-left: 30px;
+    box-shadow: rgba(192, 192, 192, 0.404) 10px 10px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+tr{
+    font-size: 15px;
+    justify-content: space-around;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+td{
+    padding-top: 20px;
+}
+tr:hover{
+    background-color: gray;
+    border-radius: 3px;
+    transition-delay: 1ms;
+    transition: 3s;
+}
+
+.table-heading{
+    font-weight: bold;
+    
+}
+
+.top-left{
+    margin: 20px 0px 40px 0px;
+}
+
+.table-data{
+    display: flex;
+    justify-content: center;
+}
+
+
+.box {
+    background-color: rgb(42, 159, 165);
+    margin: 10px;
+    border-radius: 0px 4px 4px 0px;
+    width: 30px;
+    height: 20px;
+    transition-timing-function: 3000ms;
+    transition-delay: 1000ms;
+    transition: 20s;
+    animation: box-me-in 50s;
+}
+
+.box:hover{
+    width: 550px;
+    background-color: purple;
+    animation: box-me-in 20s;
+}
+
+@keyframes box-me-in {
+    0% {
+        width: 100px;
+        transition-delay: 1000ms;
+        transition: 50s;
+    }
+    /* Adding a step in the middle */
+    50% {
+        width: 1000px;
+        background: blue;
+        transition: 50s;
+    }
+    100% {
+        
+      background: black;
+    }
+  }
+
+.circle-container{
+    display: flex;
+    justify-content: center;
+}
+
+.inner-circle-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 9px;
+    height: 80px;
+    width: 80px;
+}
+
+.circle1{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
+.circle1{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    /* width: 100px;
+    height: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 2px solid black;
+    border-bottom: 0px;
+    transform: rotate(45deg); */
+}
+.circle2{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background-color: white;
+    z-index: 100;
+
+    /* width: 80px;
+    height: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    transform: rotate(45deg);
+    border: 2px solid black;
+    border-bottom: 0px; */
+}
+
+.grid-container{
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: 100px 100px;
+}
+
+.grid-item-top{
+    display: grid;
+    column-gap: 2px;
+    margin-left: 5px;
+    grid-template-columns: 40px 40px;
+}
+
+.grid-item-left{
+    display: grid;
+    margin: 2px;
+    background-color: bisque;
+    justify-content: center;
+}
+
+.grid-item-bottom{
+    display: grid;
+    grid-template-columns: 80px 80px;
+    background-color: beige;
+    justify-content: center;
+}
+
+
+.circle-container{
+    display: grid;
+    justify-content: center;
+}
+.aivee{
+    padding-left: 50px;
+}
+.aivee-left{
+    padding-left: 50px;
+}
+
+.half-circle1{
+    width: 210px;
+    height: 150px;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 2px solid black;
+    border-bottom: 0px;
+    transform: rotate(34deg);
+}
+.half-circle2{
+    width: 210px;
+    height: 150px;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 2px solid black;
+    border-bottom: 0px;
+    transform: rotate(215deg);
+}
+
+/* .circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-left: 300px;
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-width: 14;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 110;
+    stroke-dashoffset: 92;
+    background-color: aquamarine;
+    clip: rect(0px, 75px, 0px, 75px);
+} */
+
+
+.circle-wrap{
+    margin: 50px auto;
+    width: 150px;
+    height: 150px;
+    background: #e6e2e7;
+    border-radius: 50%;
+}
+
+.circle-wrap .circle .mask, .circle-wrap .circle .fill{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-wrap .circle .mask{
+    clip: rect(0px, 150px, 150px, 0px);
+}
+
+.circle-wrap .circle .mask .fill{
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #f7403b;
+}
+
+.circle-wrap .circle .mask.full, .circle-wrap .circle .fill{
+    animation: fill ease-in-out 3s;
+    transform: rotate(126deg);
+}
+
+@keyframes fill{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(126deg);
+    }
+}
+
+.circle-wrap .inside-circle{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #fff;
+    line-height: 130px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 100%;
+    font-weight: 700;
+    font-size: 2em;
+
+}
+
+
+/* this is for circles inside a circle */
+/* circle-wrap as circle1 */
+/* circle as circle-i */
+/* mask as mask1 */
+/* fill as fill1 */
+/* inner-circle as inner-circle1 */
+.circle1{
+    margin: 50px auto;
+    width: 150px;
+    height: 150px;
+    background: pink;
+    border-radius: 50%;
+}
+
+.circle1 .circle-i .mask1, .circle1 .circle-i .fill1{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 .circle-i .mask1 .fill1{
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: red;
+}
+
+.circle1 .circle-i .mask1 .inside-circle1{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    line-height: 130px;
+    text-align: center;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 100%;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+/* rough */
+/* .circle-wrapper{
+    background-color: rgb(103, 38, 38);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+} */
+
+.circle-half{
+    background-color: rgb(26, 21, 21);    
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 100%;
+    clip: rect(0px, 48px, 150px, 0px);
+}
+
+.circle-inner{
+    background-color: rgb(73, 26, 26);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    clip: rect(0px, 75px, 150px, 0px);
+    z-index: 100%;
+}
+
+.white-circle{
+    background-color: rgb(250, 226, 226);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    z-index: 100%;
+}
