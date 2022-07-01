@@ -1,0 +1,29 @@
+.bg{
+    width: 500px;
+    height: 500px;
+    background: black;
+    transition: all;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation: changebg 5s;
+    transform: rotate(360deg);
+}
+
+@keyframes changebg {
+    0%{
+        transform: rotate(360deg);
+        background: linear-gradient(to bottom right, blue, pink, red, violet);
+    }
+    30%{
+        transform: rotate(360deg);
+        background: linear-gradient(to bottom right, rgb(44, 121, 117), rgb(186, 29, 55), red, rgb(130, 238, 211));
+    }
+    60%{
+        background: linear-gradient(to bottom right, orange, yellow, green, white);
+    }
+    100%{
+        transform: rotate(360deg);
+        background: linear-gradient(to bottom right, black, green, indigo, violet);
+    }
+    
+}
