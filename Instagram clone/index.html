@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Instagram</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- this code is written by Anubhav -->
+    <!-- Github link : https://github.com/RajAnubhav -->
+    
+    <div class="instagram-page">
+        <div class="container">
+            <div class="ph">
+                <!-- phone section -->
+                <img class="phone"
+                    src="https://www.instagram.com/static/images/homepage/phones/home-phones-2x.png/cbc7174b4f05.png"
+                    alt="">
+                <div class="slides">
+                    <!-- images section  -->
+                    <img width="300px" style="visibility:hidden;" id="first" class="slides-inside"
+                        src="https://www.instagram.com/static/images/homepage/screenshots/screenshot4-2x.png/8e9224a71939.png"
+                        alt="" srcset="">
+                    <img id="second" class="slides-inside"
+                        src="https://www.instagram.com/static/images/homepage/screenshots/screenshot3-2x.png/fe2540684ab2.png"
+                        alt="">
+                    <img id="third" class="slides-inside"
+                        src="https://www.instagram.com/static/images/homepage/screenshots/screenshot1-2x.png/cfd999368de3.png"
+                        alt="">
+                    <img id="fourth" style="visibility:hidden;" class="slides-inside"
+                        src="https://www.instagram.com/static/images/homepage/screenshots/screenshot2-2x.png/80b8aebdea57.png"
+                        alt="">
+                </div>
+            </div>
+            <div class="login">
+                <!-- login section -->
+                <div class="login-top">
+                    <a href="#">
+                        <img class="insta-logo"
+                            src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png"
+                            alt="">
+                    </a>
+                    <input class="inp-data user" id="username" type="text"><label id="user-label" for="username">Phone
+                        number, username, or email</label>
+
+                    <!-- need to look over this -->
+                    <div class="show-hide-bar">
+                        <input class="inp-data pass" onclick="show()" id="password" type="password"><label
+                            id="pass-label" for="password">Password</label>
+                        <div id="show">
+                            <button class="show">Show</button>
+                        </div>
+                    </div>
+                    <input class="Login-button" type="button" value="Log In">
+                    <div class="or">
+                        <div class="hr1">
+                        </div>
+                        OR
+                        <div class="hr2">
+                        </div>
+                    </div>
+                    <div class="lg-facebook">
+                        <!-- THIS SECTION IS FOR LOGIN WITH FACEBOOK  -->
+                        <img class="fb-logo"
+                            src="data:image/png;base64,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"
+                            alt="">
+                        <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%252221vealxh5drqxcxln91vvyt1s1vxklgo1wten5s7wvyy91dcvc0h%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26locale%3Den_GB%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D7f8e1f57-ad03-47f2-8f29-e1009cd4132c%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%252221vealxh5drqxcxln91vvyt1s1vxklgo1wten5s7wvyy91dcvc0h%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=en_GB&pl_dbl=0">Log in with facebook</a>
+                    </div>
+                    <!-- THIS SECTION IS FOR FORGET PASSWORD -->
+                    <div class="fg-password">
+                        <a href="https://www.instagram.com/accounts/password/reset/">Forget Password?</a>
+                    </div>
+                </div>
+                <div class="login-bottom">
+                    <!-- SIGN-UP SECTION -->
+                    <div class="dont-have-account">
+                        Don't have an account?
+                        <a href="https://www.instagram.com/accounts/emailsignup/" style="font-weight: 600;
+                    color: #0095f6;">Sign up</a>
+                    </div>
+                </div>
+                <div class="lower-half">
+                    Get the app
+                </div>
+                <div class="stores">
+                    <!-- THIS IS FOR APP STORE -->
+                    <a href="https://apps.apple.com/app/instagram/id389801252?vt=lo">
+                        <img class="app-store"
+                            src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png"
+                            alt="">
+                    </a>
+                    <!--  THIS IS FOR GOOGLE PLAY STORE  -->
+                    <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3D5F243539-8FE3-4702-8AB6-A76C77A36811%26utm_content%3Dlo%26utm_medium%3Dbadge">
+                        <img class="play-store"
+                            src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png"
+                            alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER SECTION STARTS HERE -->
+        <footer class="foot">
+            <div class="links">
+                <span>
+                    <a href="https://about.facebook.com/">Meta</a>
+                    <a href="https://about.instagram.com/">About</a>
+                    <a href="https://about.instagram.com/en_US/blog">Blog</a>
+                    <a href="https://about.instagram.com/about-us/careers">Jobs</a>
+                    <a href="https://help.instagram.com/">Help</a>
+                    <a href="https://developers.facebook.com/docs/instagram">API</a>
+                    <a href="https://help.instagram.com/519522125107875/?maybe_redirect_pol=0">Privacy</a>
+                    <a href="https://help.instagram.com/581066165581870">Terms</a>
+                    <a href="https://www.instagram.com/directory/profiles/">Top Accounts</a>
+                    <a href="https://www.instagram.com/directory/hashtags/">Hashtags</a>
+                    <a href="https://www.instagram.com/explore/locations/">Locations</a>
+                    <a href="https://www.instagram.com/web/lite/">Instagram Lite</a>
+                    <a href="https://www.facebook.com/help/instagram/261704639352628">Contact Uploading & Non-Users</a>
+                </span>
+            </div>
+            <div class="extra-stuffs">
+                <span>
+                    <a href="https://www.instagram.com/topics/dance-and-performance/">Dance</a>
+                    <a href="https://www.instagram.com/topics/food-and-drink/">Food & Drink</a>
+                    <a href="https://www.instagram.com/topics/home-and-garden/">Home & Garden</a>
+                    <a href="https://www.instagram.com/topics/music/">Music</a>
+                    <a href="https://www.instagram.com/topics/visual-arts/">Visual Arts</a>
+                </span>
+            </div>
+
+            <!-- ==================          NEW THING LEARNT      ================= -->
+            <!-- language translation using JS -->
+            <div class="last-line">
+                <div id="google_translate_element" class="language"></div>
+                <div class="line-end">
+                    © 2022 Instagram from Meta
+                </div>
+                </span>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- ==============================      JAVASCRIPT SECTION STARTS HERE   =============================== -->
+    <script>
+        // this show function is not working, need to look over this
+        const show = () => {
+            const data = document.getElementById('password');
+
+        }
+
+        // googleTranslateElementInit() is working and it is used to translate the whole page
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element').style.border = 'none';
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>
+
+<!-- =============================     Links for the photos in the instagram      ===========================================-->
+
+<!-- link for instagram logo : https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png -->
+<!-- link for phone cover : https://www.instagram.com/static/images/homepage/phones/home-phones-2x.png/cbc7174b4f05.png -->
+<!-- link for home photo1 : https://www.instagram.com/static/images/homepage/screenshots/screenshot4-2x.png/8e9224a71939.png -->
+<!-- link for photo 2: https://www.instagram.com/static/images/homepage/screenshots/screenshot3-2x.png/fe2540684ab2.png -->
+<!-- link for photo 3: https://www.instagram.com/static/images/homepage/screenshots/screenshot1-2x.png/cfd999368de3.png -->
+<!-- link for photo 4: https://www.instagram.com/static/images/homepage/screenshots/screenshot2-2x.png/80b8aebdea57.png -->
