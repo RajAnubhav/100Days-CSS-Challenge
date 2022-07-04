@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Google</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="main-page">
+        <div class="navbar">
+            <div class="left-navbar">
+                <img class="drag" src="./drag.png" alt="drag">
+                <a class="links" href="#">ALL</a>
+                <a class="links" href="#">IMAGES</a>
+            </div>
+            <div class="right-navbar">
+                <!-- sign-in drag -->
+                <input class="sign-in" type="button" value="Sign in">
+                <img class="triple-drag" src="triple-drag.png" alt="">
+            </div>
+        </div>
+        <div class="google-body-part">
+            <div class="google">
+                <div class="google-logo">
+                    <img class="google-logo-img"
+                        src="https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png"
+                        alt="">
+                </div>
+                <div class="search">
+                    <img class="search-img" src="./search-img.png" alt="" style="z-index: 10;">
+                    <input class="search-bar" id="input-data" onchange="search()" type="text">
+                    <img class="mic" src="mic1.png" alt="">
+                </div>
+            </div>
+            <div class="languages">
+                <div class="lang">
+                    Google offered in:
+                </div>
+                <div class="list-of-languages">
+                    <a class="mylist" href="https://www.google.co.uk/setprefs?sig=0_krI5sepbFfePfoqIEKEjBD597-o%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwjvtaH3ieD4AhVzSGwGHb2kCHsQ2ZgBCBA">हिन्दी </a>
+                    <a class="mylist" href="https://www.google.co.uk/setprefs?sig=0_krI5sepbFfePfoqIEKEjBD597-o%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwjvtaH3ieD4AhVzSGwGHb2kCHsQ2ZgBCBE">বাংলা </a>
+                    <a class="mylist" href="https://www.google.co.uk/setprefs?sig=0_krI5sepbFfePfoqIEKEjBD597-o%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwjvtaH3ieD4AhVzSGwGHb2kCHsQ2ZgBCBI">తెలుగు </a>
+                    <a class="mylist" href="https://www.google.co.uk/setprefs?sig=0_krI5sepbFfePfoqIEKEjBD597-o%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwjvtaH3ieD4AhVzSGwGHb2kCHsQ2ZgBCBM">मराठी </a>
+                    <a class="mylist" href="https://www.google.co.uk/setprefs?sig=0_krI5sepbFfePfoqIEKEjBD597-o%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwjvtaH3ieD4AhVzSGwGHb2kCHsQ2ZgBCBQ">தமிழ்</a>
+                    <a class="mylist" href="https://www.google.co.uk/setprefs?sig=0_krI5sepbFfePfoqIEKEjBD597-o%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwjvtaH3ieD4AhVzSGwGHb2kCHsQ2ZgBCBU">ગુજરાતી </a>
+                    <a class="mylist" href="https://www.google.co.uk/setprefs?sig=0_krI5sepbFfePfoqIEKEjBD597-o%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwjvtaH3ieD4AhVzSGwGHb2kCHsQ2ZgBCBY">ಕನ್ನಡ </a>
+                    <a class="mylist" href="https://www.google.co.uk/setprefs?sig=0_krI5sepbFfePfoqIEKEjBD597-o%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwjvtaH3ieD4AhVzSGwGHb2kCHsQ2ZgBCBc">മലയാളം </a>
+                    <a class="mylist" href="https://www.google.co.uk/setprefs?sig=0_krI5sepbFfePfoqIEKEjBD597-o%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwjvtaH3ieD4AhVzSGwGHb2kCHsQ2ZgBCBg">ਪੰਜਾਬੀ</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="India">
+                India
+            </div>
+            <div class="hr"></div>
+            <div class="hr"></div>
+            <div class="footer-list">
+                <div class="footer-first-line">
+                    <a href="#" id="mode" onclick="darkMode()">Dark theme: off</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+                <div class="footer-bottom-line">
+                    <a href="#">Advertising</a>
+                    <a href="#">Business</a>
+                    <a href="#">About</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        const search=()=>{
+            let data = document.getElementById('input-data').value;
+            console.log(data);
+            window.open('https://google.com/search?q='+data);
+        }
+    </script>
+</body>
+
+</html>
