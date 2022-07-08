@@ -1,0 +1,19 @@
+{
+  "name": "mongodb_atlas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "helmet": "^5.1.0",
+    "mongodb": "^4.7.0",
+    "mongoose": "^6.4.3",
+    "morgan": "^1.10.0"
+  }
+}
